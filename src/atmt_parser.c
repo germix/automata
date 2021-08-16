@@ -53,6 +53,8 @@ struct automata* new_automata(int type)
 		case AUTOMATA_TYPE_PDA:
 			autom->opers = &automata_operations_for_pda;
 			autom->deterministic = true;
+			autom->stack = (struct stack*)malloc(sizeof(struct stack));
+			stack_init(autom->stack);
 			break;
 		case AUTOMATA_TYPE_NPDA:
 			autom->opers = &automata_operations_for_npda;
