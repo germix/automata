@@ -2,8 +2,8 @@
 //
 // Programa principal
 //
-// Autor: Germán Martínez
-// Materia: Autómatas y Lenguajes (2013)
+// Autor: Germï¿½n Martï¿½nez
+// Materia: Autï¿½matas y Lenguajes (2013)
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #if defined(_MSC_VER)
@@ -36,7 +36,7 @@ void test_automata_inclusion();
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 //
-// Estructura principal de la aplicación
+// Estructura principal de la aplicaciï¿½n
 //
 struct application
 {
@@ -54,7 +54,7 @@ struct application
 bool dialog_text_entry(char* text, int max, const char* label)
 {
 	int x = 5;
-	int y = 10;
+	int y = 20;
 	int width = screen_width()-(x*2)-1;
 	int height = 7;
 //	int height = screen_height()-(y*2)-1-5;
@@ -74,7 +74,7 @@ struct automata* load_automata(const char* filename)
 	{
 		struct automata* autom = parser_automata(buf);
 		//
-		// Si el existe y es válido, crear el grafo
+		// Si el existe y es vï¿½lido, crear el grafo
 		//
 		if(autom && autom->type != AUTOMATA_TYPE_INVALID)
 		{
@@ -92,19 +92,19 @@ void load_testing(struct application* app)
 		char* string;
 	}test_data[] =
 	{
-		// Máquinas de Turing
+		// Mï¿½quinas de Turing
 		{	"../test/ej_tma.txt",					"010111"		},
 		
 		// Automatas a pila
 		{	"../test/ej_pda.txt",					"00111"			},
 		
-		// Automatas finitos determinísticos
+		// Automatas finitos determinï¿½sticos
 		{	"../test/ej_fda.txt",					"10101"			},
 		{	"../test/ej_fda 2.txt",					"abbabb"		},
 		{	"../test/ej_fda 3.txt",					"abbabb"		},
 		{	"../test/ej_fda tema4b.txt",			"abbabb"		},
 		
-		// Automatas finitos no determinísticos
+		// Automatas finitos no determinï¿½sticos
 		{	"../test/ej_fna.txt",					"00101"			},
 		{	"../test/ej_fna 2.txt",					"abbbb"			},
 		
@@ -371,7 +371,7 @@ bool keybd_main(struct application* app)
 		case 'e':
 		case 'E':
 			//
-			// Cargar expresión regular
+			// Cargar expresiï¿½n regular
 			//
 			{
 				struct automata* thompson(const char* string);
