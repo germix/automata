@@ -1,0 +1,44 @@
+//
+// Este autómata si se prueba con la cadena "00101", se observa el mismo procesamiento
+// de las entradas que el expuesto en el libro "Teoría de autómatas, lenguajes y computación" de Hopcroft, Motwani, Ullman.
+// Tercera edición, Página 47, Figura 2.10.
+//
+AUTOMATA[FNA]["AFN= {0+1}01"] =
+{
+	//
+	// Estado 0
+	//
+	&(q0, '0') = q0;
+	&(q0, '0') = q1;
+	&(q0, '1') = q0;
+	
+	//
+	// Estado 1
+	//
+	&(q1, '1') = q2;
+	
+	//
+	// Estado 2
+	//
+	&(q2, \$ ) = \H;
+	
+	
+// --------------------------------------------
+//	&(q1, '1') = \H;
+//
+// --------------------------------------------
+//	Esto talvez debería poder escribirse así
+//
+//	&(q1, '1') = q2;
+//	
+//	&(q2, \E ) = \H;
+//
+// --------------------------------------------
+// O talez, simplemente
+//
+//	&(q1, '1') = q2;
+//
+// Teniendo el conjunto de los estado finales
+//
+};
+

@@ -1,0 +1,34 @@
+// Ejemplo de ...
+// 
+// Libro: Teoría de autómatas, lenguajes y computación. (Tercera Edicion)
+// Autores: Hopcropft, Motwani, Ullman
+// Páginas 191-193
+// Ver: Figura 6.2, Figura 6.3
+//
+AUTOMATA[NPDA]["L={ww^R}"] =
+{
+	< StartState = q0 >
+	< FinalStates = {q2} >
+	
+	//
+	// Estado 0
+	//
+	&(q0, '0', \Z ) = (q0, '0'\Z);
+	&(q0, '1', \Z ) = (q0, '1'\Z);
+	&(q0, '0', '0') = (q0, '0''0');
+	&(q0, '0', '1') = (q0, '0''1');
+	&(q0, '1', '0') = (q0, '1''0');
+	&(q0, '1', '1') = (q0, '1''1');
+	
+	&(q0, \E , \Z ) = (q1, \Z);
+	&(q0, \E , '0') = (q1, '0');
+	&(q0, \E , '1') = (q1, '1');
+	
+	//
+	// Estado 1
+	//
+	&(q1, '0', '0') = (q1, \E);
+	&(q1, '1', '1') = (q1, \E);
+	&(q1, \E , \Z ) = (q2, \Z);
+};
+

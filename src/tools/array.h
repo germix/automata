@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Arreglos
+//
+// Autor: Germán Martínez
+// Materia: Autómatas y Lenguajes (2013)
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#ifndef ___ARRAY_H___
+#define ___ARRAY_H___
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void* array_add(void** ptr, int* count, int data_size);
+void  array_clear(void** ptr, int* count);
+
+#ifdef __cplusplus
+};
+#endif
+
+#endif
+

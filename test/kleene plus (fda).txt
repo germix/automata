@@ -1,0 +1,16 @@
+AUTOMATA[FDA]["AFD = kleene plus"] =
+{
+	< StartState = q0 >
+	< FinalStates = {q1} >
+	
+	//
+	// Estado 0
+	//
+	&(q0, '0') = q1;
+	
+	//
+	// Estado 1
+	//
+	&(q1, '0') = q1;
+};
+

@@ -1,0 +1,27 @@
+AUTOMATA[FNA]["AFN = kleene plus"] =
+{
+	< StartState = q0 >
+	< FinalStates = {q3} >
+	
+	//
+	// Estado 0
+	//
+	&(q0, '0') = q1;
+	
+	//
+	// Estado 1
+	//
+	&(q1, \E ) = q2;
+	
+	//
+	// Estado 2
+	//
+	&(q2, '0') = q3;
+	&(q2, \E ) = q3;
+	
+	//
+	// Estado 3
+	//
+	&(q3, \E ) = q2;
+};
+

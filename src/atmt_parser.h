@@ -1,0 +1,22 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Analizador sintáctico para el lenguaje AUTOMATA
+//
+// Autor: Germán Martínez
+// Materia: Autómatas y Lenguajes (2013)
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#ifndef ___ATMT_PARSER_H___
+#define ___ATMT_PARSER_H___
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+struct automata* parser_automata(struct buffer* buf);
+
+#ifdef __cplusplus
+};
+#endif
+
+#endif

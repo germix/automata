@@ -1,0 +1,18 @@
+AUTOMATA[FDA]["AFD = empty"] =
+{
+	//
+	// Estado 0
+	//
+	&(q0, '1') = q1;
+	
+	//
+	// Estado 1
+	//
+	&(q1, '0') = q2;
+	
+	//
+	// Estado 2
+	//
+	&(q2, '1') = q1;
+};
+

@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Logger
+//
+// Autor: Germán Martínez
+// Materia: Autómatas y Lenguajes (2013)
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#ifndef ___LOG_H___
+#define ___LOG_H___
+
+struct logger
+{
+	void (*debug)(const char* fmt, ...);
+	void (*fatal)(const char* fmt, ...);
+	void (*error)(const char* fmt, ...);
+	void (*warning)(const char* fmt, ...);
+};
+
+#endif

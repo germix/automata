@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Keyboard
+//
+// Autor: Germán Martínez
+// Materia: Autómatas y Lenguajes (2013)
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#if defined(_MSC_VER)
+#pragma warning(disable:4996)
+#endif
+#include <conio.h>
+
+int getkey()
+{
+	int k;
+	k = getch();
+	if(k == 0x00 || k == 0xE0)
+	{
+//		k = ((getch() << 8) | k);
+		k = ((k << 8) | getch());
+	}
+	return k;
+}

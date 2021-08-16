@@ -1,0 +1,46 @@
+AUTOMATA[FDA]["((a|b)^*)(abb) ... Ullman Figura 3.36"] =
+{
+	//
+	// Libro: Compiladores, Principios, Técnicas y Herramientas (Segunda edición)
+	// Ejemplo: Ver Figura 3.34 y Figura 3.36
+	// Páginas: 155-156
+	//
+	// q0 = A
+	// q1 = B
+	// q2 = C
+	// q3 = D
+	// q4 = E
+	//
+	
+	//
+	// Estado 0
+	//
+	&(q0, 'a') = q1;
+	&(q0, 'b') = q2;
+	
+	//
+	// Estado 1
+	//
+	&(q1, 'a') = q1;
+	&(q1, 'b') = q3;
+	
+	//
+	// Estado 2
+	//
+	&(q2, 'a') = q1;
+	&(q2, 'b') = q2;
+	
+	//
+	// Estado 3
+	//
+	&(q3, 'a') = q1;
+	&(q3, 'b') = q4;
+	
+	//
+	// Estado 4
+	//
+	&(q4, 'a') = q1;
+	&(q4, 'b') = q2;
+	&(q4, \$ ) = \H;
+};
+

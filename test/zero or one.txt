@@ -1,0 +1,11 @@
+AUTOMATA[FNA]["AFN = cero o uno ocurrencias del 0"] =
+{
+	< StartState = q0 >
+	< FinalStates = {q1} >
+	//
+	// Estado 0
+	//
+	&(q0, '0') = q1;
+	&(q0, \E ) = q1;
+};
+

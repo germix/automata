@@ -1,0 +1,40 @@
+//
+// Este es el automata del ejemplo de minimización
+// de la presentación de la clase 3 "Tema 4b Automatas Finitos Automata Tipo 3.pdf"
+//
+AUTOMATA[FDA]["AFD = Clase3-Tema4b"] =
+{
+	< StartState = q1 >
+	< FinalStates = {q5} >
+	
+	//
+	// Estado 1
+	//
+	&(q1, 'a') = q2;
+	&(q1, 'b') = q3;
+	
+	//
+	// Estado 2
+	//
+	&(q2, 'a') = q2;
+	&(q2, 'b') = q4;
+	
+	//
+	// Estado 3
+	//
+	&(q3, 'a') = q2;
+	&(q3, 'b') = q3;
+	
+	//
+	// Estado 4
+	//
+	&(q4, 'a') = q2;
+	&(q4, 'b') = q5;
+	
+	//
+	// Estado 4
+	//
+	&(q5, 'a') = q2;
+	&(q5, 'b') = q3;
+};
+
