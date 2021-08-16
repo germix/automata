@@ -3,7 +3,7 @@
 // de las entradas que el expuesto en el libro "Teoría de autómatas, lenguajes y computación" de Hopcroft, Motwani, Ullman.
 // Tercera edición, Página 47, Figura 2.10.
 //
-AUTOMATA[FNA]["AFN= {0+1}01"] =
+AUTOMATA[FNA]["AFN= (0|1)*01 - Un AFN que acepta todas las cadenas que terminan en 01"] =
 {
 	//
 	// Estado 0
