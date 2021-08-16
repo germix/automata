@@ -5,7 +5,7 @@
 // Páginas 191-193
 // Ver: Figura 6.2, Figura 6.3
 //
-AUTOMATA[NPDA]["L={ww^R}"] =
+AUTOMATA[NPDA]["L={ww^R} | w pertenece a (0|1)*"] =
 {
 	< StartState = q0 >
 	< FinalStates = {q2} >
